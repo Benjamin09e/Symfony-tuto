@@ -1,0 +1,16 @@
+{% extends 'base.html.twig'%}
+
+{%block title %}Acceuil{%endblock%}
+
+{%block body%}
+      <h1>Bonjour les Gabonaises</h1>
+      <h2>{{let}}</h2>
+
+      <ul>
+            {% if bool %}
+                  {% for item in tabs %}
+                        <li>{{item}}</li>
+                  {% endfor %}
+            {% endif %}
+      </ul>
+{%endblock%}
